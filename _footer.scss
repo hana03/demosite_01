@@ -1,0 +1,12 @@
+@charset "UTF-8";
+@import "_mixin.scss";
+
+.footer{
+  padding-top: 40px;
+  background-color: rgb(66, 70, 70);
+  p{
+    text-align: center;
+    color: #fff;
+    padding-bottom: 10px;
+  }
+}

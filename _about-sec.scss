@@ -1,0 +1,66 @@
+@charset "UTF-8";
+@import "_mixin.scss";
+
+.about_sec {
+  text-align: center;
+  padding: 0 40px;
+
+  .main_ttl {
+    @include main_ttl;
+  }
+
+  .flex {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    img {
+      border-radius: 50%;
+      width: 40%;
+      margin: 0 auto;
+    }
+
+    .main_sub_ttl {
+      @include main_sub_ttl;
+
+    }
+    .main_text {
+      @include main_text;
+    }
+  }
+}
+
+@include tb {
+  .about_sec {
+    text-align: inherit;
+    margin-top: 40px;
+    
+    .flex {
+      flex-direction: row;
+      margin: 0 auto;
+
+      img {
+        width: 30%;
+      }
+      .tb-fle{
+        display: flex;
+        flex-direction: column;
+        margin-left: 60px;
+      }
+    }
+
+    .main_sub_ttl {
+      text-align: left;
+    }
+  }
+}
+@include pc {
+  .about_sec {
+    @include inner;
+    
+    .main_ttl{
+      text-align: left;
+    }
+  
+  }
+}
