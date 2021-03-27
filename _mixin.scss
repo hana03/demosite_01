@@ -1,1 +1,53 @@
 @charset "UTF-8";
+
+$font-color:#383e45;
+
+@mixin inner{
+  width: 1150px;
+  margin: 0 auto;
+}
+
+
+@mixin main_ttl {
+  color: $font-color;
+  font-size: 36px;
+  letter-spacing: 3px;
+  border-bottom: 1px solid;
+  padding-bottom: 2px;
+  display: inline-block;
+  text-align: center;
+  margin: 95px 0 60px;
+}
+
+@mixin main_sub_ttl {
+  color: $font-color;
+  font-size: 22px;
+  letter-spacing: 4px;
+  margin-bottom: 15px;  
+  text-align: center;
+  margin-top: 30px;
+}
+
+@mixin main_text {
+  font-size: 16px;
+  letter-spacing: 4px;
+  line-height: 20px;
+}
+
+@mixin pc {
+  @media screen and (min-width:1200px) {
+    @content;
+  }
+}
+
+@mixin tb {
+  @media screen and (min-width:900px) {
+    @content;
+  }
+}
+
+@mixin sp {
+  @media screen and (min-width:640px) {
+    @content;
+  }
+}
