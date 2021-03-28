@@ -70,4 +70,7 @@
   .about_sec .main_ttl {
     text-align: left;
   }
+  .flex .tb-fle .main_sub_ttl {
+    margin-bottom: 60px;
+  }
 }
