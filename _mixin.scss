@@ -13,8 +13,7 @@ $font-color:#525252;
 
 
 @mixin main_ttl {
-  // color: $font-color;
-  font-size: 36px;
+  font-size: 2.8rem;
   letter-spacing: 3px;
   border-bottom: 1px solid;
   padding-bottom: 2px;
@@ -25,8 +24,7 @@ $font-color:#525252;
 
 
 @mixin main_sub_ttl {
-  // color: $font-color;
-  font-size: 22px;
+  font-size: 2.8rem;
   letter-spacing: 4px;
   margin-bottom: 15px;  
   text-align: center;
@@ -34,9 +32,10 @@ $font-color:#525252;
 }
 
 @mixin main_text {
-  font-size: 16px;
+  font-size: 1.6rem;
+  line-height: 28px;
   letter-spacing: 4px;
-  line-height: 20px;
+  // line-height: 20px;
 }
 
 @mixin pc {
