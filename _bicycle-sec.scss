@@ -4,9 +4,11 @@
 .bicycle_sec {
   text-align: center;
   padding: 0 40px;
+  // margin-bottom: 50px;
+
 
   .main_ttl {
-    @include main_sub_ttl;
+    @include main_ttl;
   }
 
   .sec {
@@ -16,37 +18,33 @@
     }
 
     .main_sub_ttl {
-      @include main_text;
-    }
-
-    .main_sub_ttl {
       @include main_sub_ttl;
     }
 
     .main_text {
       @include main_text;
+      margin-bottom: 40px;
     }
   }
-
 }
 
 @include tb {
-  .bicycle_sec{
+  .bicycle_sec {
     margin-bottom: 60px;
     text-align: inherit;
+
     .main_ttl {
-      @include main_ttl;
       margin: 40px 0;
-    
     }
+
     .pc_flex {
       display: flex;
       justify-content: space-between;
       width: 100%;
-  
+      margin-bottom: 50px;
+
       .sec {
         width: calc(100% / 3 - 20px);
-  
       }
     }
   }
@@ -55,10 +53,9 @@
 @include pc {
   .bicycle_sec {
     @include inner;
-    
-    .main_ttl{
+
+    .main_ttl {
       text-align: left;
     }
-  
   }
 }
