@@ -156,12 +156,20 @@ p {
 }
 
 .key-visual {
-  background-image: url(image/mainvisual.jpg);
+  background-image: url(image/key01.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
   width: 100%;
-  height: 650px;
+  height: 400px;
+  padding-top: 30px;
+}
+
+@media screen and (min-width: 1200px) {
+  .key-visual {
+    height: 800px;
+    padding-top: 100px;
+  }
 }
 
 .about_sec {
@@ -170,7 +178,7 @@ p {
 }
 
 .about_sec .main_ttl {
-  font-size: 36px;
+  font-size: 2.8rem;
   letter-spacing: 3px;
   border-bottom: 1px solid;
   padding-bottom: 2px;
@@ -192,7 +200,7 @@ p {
 }
 
 .about_sec .flex .main_sub_ttl {
-  font-size: 22px;
+  font-size: 2.8rem;
   letter-spacing: 4px;
   margin-bottom: 15px;
   text-align: center;
@@ -200,9 +208,9 @@ p {
 }
 
 .about_sec .flex .main_text {
-  font-size: 16px;
+  font-size: 1.6rem;
+  line-height: 28px;
   letter-spacing: 4px;
-  line-height: 20px;
 }
 
 @media screen and (min-width: 900px) {
@@ -231,6 +239,7 @@ p {
   .about_sec {
     width: 1150px;
     margin: 0 auto;
+    margin-bottom: 60px;
   }
   .about_sec .main_ttl {
     text-align: left;
@@ -243,7 +252,7 @@ p {
 }
 
 .bicycle_sec .main_ttl {
-  font-size: 36px;
+  font-size: 2.8rem;
   letter-spacing: 3px;
   border-bottom: 1px solid;
   padding-bottom: 2px;
@@ -257,7 +266,7 @@ p {
 }
 
 .bicycle_sec .sec .main_sub_ttl {
-  font-size: 22px;
+  font-size: 2.8rem;
   letter-spacing: 4px;
   margin-bottom: 15px;
   text-align: center;
@@ -265,9 +274,9 @@ p {
 }
 
 .bicycle_sec .sec .main_text {
-  font-size: 16px;
+  font-size: 1.6rem;
+  line-height: 28px;
   letter-spacing: 4px;
-  line-height: 20px;
   margin-bottom: 40px;
 }
 
@@ -283,6 +292,7 @@ p {
     display: flex;
     justify-content: space-between;
     width: 100%;
+    margin-bottom: 50px;
   }
   .bicycle_sec .pc_flex .sec {
     width: calc(100% / 3 - 20px);
