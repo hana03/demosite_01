@@ -28,6 +28,7 @@ time, mark, audio, video {
 
 body {
   line-height: 1;
+  color: #525252;
 }
 
 article, aside, details, figcaption, figure,
@@ -98,6 +99,14 @@ hr {
 
 input, select {
   vertical-align: middle;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+p {
+  font-size: 1.8rem;
 }
 
 /* END Reset css*/

@@ -7,6 +7,10 @@ $font-color:#525252;
   margin: 0 auto;
 }
 
+@mixin fz($size: 16) {
+  font-size: ($size / 10) + rem;
+}
+
 
 @mixin main_ttl {
   // color: $font-color;
@@ -18,6 +22,7 @@ $font-color:#525252;
   text-align: center;
   margin: 95px 0 60px;
 }
+
 
 @mixin main_sub_ttl {
   // color: $font-color;

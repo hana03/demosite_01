@@ -1,4 +1,5 @@
 @charset "utf-8";
+@import "_mixin.scss";
 
 /*
 html5doctor.com Reset Stylesheet
@@ -104,5 +105,13 @@ hr {
 input, select {
     vertical-align:middle;
 }
+
+html {
+    font-size: 62.5%;
+  }
+  
+  p {
+    @include fz(18);
+  }
 
 /* END Reset css*/
