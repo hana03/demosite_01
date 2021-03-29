@@ -4,7 +4,6 @@
 .about_sec {
   text-align: center;
   padding: 0 40px;
- 
 
   .main_ttl {
     @include main_ttl;
@@ -25,6 +24,7 @@
       @include main_sub_ttl;
 
     }
+
     .main_text {
       @include main_text;
     }
@@ -35,7 +35,7 @@
   .about_sec {
     text-align: inherit;
     margin-top: 40px;
-    
+
     .flex {
       flex-direction: row;
       margin: 0 auto;
@@ -43,7 +43,8 @@
       img {
         width: 30%;
       }
-      .tb-fle{
+
+      .tb-fle {
         display: flex;
         flex-direction: column;
         margin-left: 60px;
@@ -55,24 +56,24 @@
     }
   }
 }
+
 @include pc {
   .about_sec {
     @include inner;
     margin-bottom: 60px;
-    
-    .main_ttl{
+
+    .main_ttl {
       text-align: left;
       // margin-bottom: 20px;
     }
-  
+
   }
-  .flex{
-    .tb-fle{
-      .main_sub_ttl{
+
+  .flex {
+    .tb-fle {
+      .main_sub_ttl {
         margin-bottom: 60px;
       }
-
     }
-
   }
 }
