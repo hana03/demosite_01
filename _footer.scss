@@ -1,12 +1,43 @@
 @charset "UTF-8";
 @import "_mixin.scss";
 
-.footer{
+.footer {
   padding-top: 40px;
   background-color: rgb(66, 70, 70);
-  p{
+
+  .footer-nav {
+    padding: 0 20px;
+
+    ul {
+      li {
+        font-size: 2rem;
+        line-height: 2rem;
+        padding-bottom: 10px;
+
+        a {
+          color: #fff;
+          text-decoration: none;
+
+        }
+
+        a:hover {
+          text-decoration: underline;
+          opacity: 0.7;
+        }
+      }
+    }
+  }
+
+  p {
     text-align: center;
     color: #fff;
-    padding-bottom: 10px;
+    padding-bottom: 30px;
+  }
+}
+
+@include pc {
+  .inner {
+    @include inner;
+
   }
 }
